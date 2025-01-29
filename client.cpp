@@ -1,14 +1,4 @@
 #include "client.h"
-#include <iostream>
-#include <string>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <unistd.h>
-#include <cstring>
-
-using namespace std;
-
-#define DEBUG 1
 
 int main(int argc, char* argv[]) {
     string input = "", username = "user", address = "127.0.0.1", port = "12345";
@@ -32,4 +22,8 @@ int main(int argc, char* argv[]) {
         port = argv[3];
     }
     if (DEBUG) cout << "DEBUG: username: " << username << ", address: " << address << ", port: " << port << endl;
+
+    // TODO: Implement OOP for handling connections asyncronously
+
+    // TODO: Implement ncurses
 }
