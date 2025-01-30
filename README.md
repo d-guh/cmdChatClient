@@ -1,2 +1,2 @@
-# cmdChatClient [cCC]
-A cmdline style TCP chat client in C++ using ncurses.
+# cmdChatClient
+A cmdline TCP chat client in C++.
