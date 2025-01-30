@@ -6,6 +6,7 @@
 void Client::start() {
     if (DEBUG) cout << "DEBUG: Starting client..." << endl;
     connect_to_server();
+    send(sockfd, client_username.c_str(), client_username.size(), 0); // Send username to server
     recieve_thread = thread(&Client::recieve_messages, this);
     send_messages();
 }
